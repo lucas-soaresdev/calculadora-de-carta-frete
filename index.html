@@ -1,2 +1,18 @@
-
-<script src="arquivo_que_nao_existe.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teste de Erro</title>
+</head>
+<body>
+  <h1>Testando erro</h1>
+  
+  <script>
+    try {
+      naoExiste(); // Vai dar erro aqui
+    } catch (e) {
+      document.body.innerHTML += '<p style="color:red;">Erro detectado: ' + e.message + '</p>';
+    }
+  </script>
+  
+</body>
+</html>
